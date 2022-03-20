@@ -22,6 +22,6 @@ public class SelTest extends BaseTest {
 
         SearchElementPageObject se = new SearchElementPageObject(getDriver());
         Assertion as = new Assertion();
-        as.assertFalse(se.isBasketButtonIsExist(), "Кнопка <Корзина> присутствует на странице?");
+        as.assertTrue(se.isBasketButtonIsExist(), "Кнопка <Корзина> присутствует на странице?");
     }
 }

@@ -15,7 +15,7 @@
 
         <aspectjs.version>1.9.8</aspectjs.version>
         <fork.Count>1</fork.Count>
-<!--        <suiteXmlFile>src\test\testing.xml</suiteXmlFile>-->
+        <suiteXmlFile>src/test/java/testng.xml</suiteXmlFile>
 
     </properties>
 
@@ -59,15 +59,9 @@
                 <version>2.22.2</version>
                 <configuration>
 
-                    <!--                    <suiteXmlFiles>-->
-                    <!--                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
-                    <!--                    </suiteXmlFiles>-->
-
-<!--                    <includes>-->
-<!--                        <include>-->
-<!--                            ${spmeModule.includes}-->
-<!--                        </include>-->
-<!--                    </includes>-->
+                    <suiteXmlFiles>
+                       <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
 
 
                     <forkCount>${fork.Count}</forkCount>

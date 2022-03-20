@@ -11,9 +11,7 @@ public class SearchElementPageObject extends Base {
         super(driver);
     }
 
-
-    // .//div[@id='stickyHeader']//div[@class='gc3']//a[contains(.,'Корзина')]
-    @FindBy(xpath = "*[@id=\"stickyHeader\"]/div[4]/a[2]")
+    @FindBy(xpath = ".//div[@id='stickyHeader']//div[@class='gc3']//a[contains(.,'Корзина')")
     private WebElement BasketButton;
 
     /**
@@ -22,7 +20,7 @@ public class SearchElementPageObject extends Base {
      * @return
      */
     public boolean isBasketButtonIsExist() {
-        return waitVisibilityElement(BasketButton);
+        return waitVisibilityElement(BasketButton,30);
     }
 
 }

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suit1" verbose="1">
+
+    <test name="myFile">
+        <classes>
+            <class name="taskLesson4.FirstTest"></class>
+        </classes>
+    </test>
+
+    <test name="parampampam">
+        <parameter name="one" value="математика"></parameter>
+        <parameter name="two" value="русский язык"></parameter>
+        <parameter name="three" value="география"></parameter>
+        <classes>
+            <class name="taskLesson4.SecondTest"></class>
+        </classes>
+    </test>
+</suite>
