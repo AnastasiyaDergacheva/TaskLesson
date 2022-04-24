@@ -99,7 +99,6 @@ public class DBHelper {
             st = con.createStatement();
             row = st.executeUpdate(sql);
 
-
         } catch (
                 SQLException throwables) {
             throwables.printStackTrace();
